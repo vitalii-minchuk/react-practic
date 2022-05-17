@@ -1,12 +1,12 @@
 import React from "react"
 
-const PostItem = () => {
+const PostItem = ({post, index}) => {
   return (
     <>
       <div className="post">
         <div className="post__content">
-          <strong>1. Javascript</strong>
-          <p>Javascript is the best programming language</p>
+          <strong>{index + ". " + post.title}</strong>
+          <p>{post.body}</p>
         </div>
         <div className="post__btns">
           <button>Delete</button>
