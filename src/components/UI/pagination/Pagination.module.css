@@ -1,0 +1,23 @@
+.pagination {
+  margin: 20px 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.page {
+  padding: 5px 10px;
+  color: teal;
+  background-color: transparent;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+
+.pageCurrent {
+  padding: 5px 10px;
+  color: white;
+  background-color: teal;
+  border: 1px solid white;
+}

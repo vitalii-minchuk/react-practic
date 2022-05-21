@@ -10,7 +10,6 @@
 .myBtn:hover {
   color: white;
   background-color: teal;
-  border: 1px solid teal;
 }
 .myBtn:disabled {
   background-color: lightgrey;

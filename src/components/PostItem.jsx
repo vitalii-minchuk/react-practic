@@ -6,7 +6,7 @@ const PostItem = ({post, index, removePost}) => {
     <>
       <div className="post">
         <div className="post__content">
-          <strong>{index + ". " + post.title}</strong>
+          <strong>{post.id + ". " + post.title}</strong>
           <p>{post.body}</p>
         </div>
         <div className="post__btns">
