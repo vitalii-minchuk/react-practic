@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useMemo } from "react"
 import { getPagesArray } from "../../utils/pages"
 import s from "./Pagination.module.css"
 
 const Pagination = ({totalPages, page, changePage}) => {
-  let pagesArray = getPagesArray(totalPages)
+  let pagesArray =  useMemo(() => {
+    return getPagesArray(totalPages)
+  }, [page, totalPages])
 
   return (
     <>
