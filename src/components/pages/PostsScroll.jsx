@@ -59,13 +59,13 @@ const PostsScroll = () => {
       </MyModal>
       <hr style={{margin: "15px 0", border: "1px solid teal"}} />
       <PostFilter filter={filter} setFilter={setFilter} />
-      { isPostsLoading && <Loader /> }
       <PostList removePost={removePost}
         isPostsLoading={isPostsLoading}
         postError={postError}
         posts={sortedAndSearchedPosts}title={"Posts List"}
       />
-      <div ref={lastElement} style={{height: "10px", backgroundColor: "red"}}></div>
+      <div ref={lastElement} style={{height: "10px"}}></div>
+      {isPostsLoading && <Loader />}
       {postError && 
         <h2 style={{margin: "30px", textAlign: "center", color: "red"}}>{postError}</h2>
       }
